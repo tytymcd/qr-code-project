@@ -1,5 +1,23 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    font-family: Outfit, sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 15px;
+}
+
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 20px;
 }
     
 .attribution a { 
@@ -7,5 +25,29 @@
 }
 
 .qr-code {
-    max-width: 50%;
+    max-width: 90%;
+    border-radius: 10px;
 }
+
+.qr-code-container {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+.container {
+    background-color: var(--light-gray);
+    max-width: 90%;
+    padding: 10%;
+    margin: 0 50px;
+    box-shadow: 0px 15px 20px var(--grayish-blue);
+}
+
+/*body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}*/
